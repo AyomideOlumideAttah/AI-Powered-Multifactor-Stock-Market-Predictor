@@ -7,9 +7,9 @@ import os
 # Load models
 @st.cache_resource
 def load_models():
-    with open("classification_model.sav", "rb") as f:
+    with open("clf_model.sav", "rb") as f:
         clf_model = pickle.load(f)
-    with open("regression_model.sav", "rb") as f:
+    with open("reg_model.sav", "rb") as f:
         reg_model = pickle.load(f)
     return clf_model, reg_model
 
